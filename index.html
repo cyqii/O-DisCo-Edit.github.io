@@ -114,47 +114,6 @@
 
 
 
-
-
-
-<!-- Subject Driven Video Generation carousel -->
-<section class="hero teaser">
-      <div class="hero-body ">
-    <div class="container is-max-desktop">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="header-video1" autoplay muted loop playsinline height="100%" src="static/videos/banner_video.mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-        Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video. Here, Dreamix turns the eating monkey (left) to a dancing bear (right) given the prompt “A bear dancing and jumping to upbeat music, moving his whole body“.
-      </h2>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="header-video2" autoplay muted loop playsinline height="100%" src="static/videos/img2vid_turtle.mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-        Dreamix can create videos based on image and text inputs. In this example it is able to instill complex motion in a static image, adding a moving shark and making the turtle swim. In this case, visual fidelity to object location and background was preserved but the turtle direction was flipped.
-      </h2>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="header-video3" autoplay muted loop playsinline height="100%"  src="static/videos/subj_driv_lifting.mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-          Given a small collection of images showing the same subject, Dreamix can generate new videos with the subject in motion. In this example, given a small number of images of the toy fireman, Dreamix is able to extract the visual features then animate it to lift weights while maintaining fidelity and temporal consistency.
-      </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Subject Driven Video Generation carousel -->
-
-
-
-
-
-
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -197,94 +156,32 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
             </td>
           </tr>
         </table>
-        <div class="item item-video2">
-          <video poster="" id="vid2vid_video2" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_party_hat.mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="vid2vid_video3" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_robot.mp4">
-          </video>
-        </div>
-        <div class="item item-video4">
-          <video poster="" id="vid2vid_video4" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_cake.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video5">
-          <video poster="" id="vid2vid_video5" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_orangutan_hello.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video6">
-          <video poster="" id="vid2vid_video6" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_truck_zoom.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video7">
-          <video poster="" id="vid2vid_video7" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_fire.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video8">
-          <video poster="" id="vid2vid_video8" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_cats.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video9">
-          <video poster="" id="vid2vid_video9" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_skateboard.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video10">
-          <video poster="" id="vid2vid_video10" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_truck_logs.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video11">
-          <video poster="" id="vid2vid_video11" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_noodles.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video12">
-          <video poster="" id="vid2vid_video12" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_circle.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video13">
-          <video poster="" id="vid2vid_video13" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_orangutan_hello2.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video14">
-          <video poster="" id="vid2vid_video14" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_football.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video15">
-          <video poster="" id="vid2vid_video15" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_orangutan_bath.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video16">
-          <video poster="" id="vid2vid_video16" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_truck_river.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video17">
-          <video poster="" id="vid2vid_video17" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_swans.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video18">
-          <video poster="" id="vid2vid_video18" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_saxophone.mp4">
-          </video>
-        </div>
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="7" style="width: 14.29%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">   Background Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="7" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/f822ce1b-e849-4dca-ab2b-5fb7beb9f2e0" width="100%" controls autoplay loop></video>
+             <p align="center">Remove the donkey</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/658f0f8a-87f4-4bf3-8a37-5fd40136a466" width="100%" controls autoplay loop></video>
+             <p align="center">Remove the chicken and dog</p>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
