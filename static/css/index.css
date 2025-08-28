@@ -125,6 +125,28 @@ body {
   margin: 0;
 }
 
+.carousel-nav .nav-button {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 14px !important;
+    transform: scale(0.8);
+}
+
+/* 增大视频展示区域 */
+.results-carousel {
+    margin: 0 -5%; /* 让轮播向两侧扩展 */
+    width: 110%;   /* 增加宽度 */
+}
+
+.results-carousel .item {
+    padding: 10px 5px !important; /* 减少内边距 */
+}
+
+.results-carousel video {
+    width: 100% !important;
+    max-width: none !important;
+}
+
 .slider-pagination .slider-page {
   background: #000000;
 }
