@@ -133,11 +133,11 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
 <!-- End paper abstract -->
 
 
-<!-- Vid2vid carousel -->
+<!-- Object Removal -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3">Object Removal (49)</h2>
+      <h2 class="title is-3">Object Removal</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <table style="width: 100%; table-layout: fixed;">
           <colgroup>
@@ -156,10 +156,28 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
             </td>
           </tr>
         </table>
+        
         <table style="width: 100%; table-layout: fixed;">
           <colgroup>
-            <col span="7" style="width: 14.29%;">
-          </colgroup>
+            <col span="5" style="width: 20%;">
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    Diffueraser&nbsp   </p></td>
+            <td><p align="center">  MiniMax-Remover  </p></td>
+            <td><p align="center">   ProPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="5" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/07d2744a-83ad-4426-b87b-f5c71c4dd490" width="100%" controls autoplay loop></video>
+             <p align="center">Remove the elephant</p>
+            </td>
+          </tr>
+        </table>
+        
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="5" style="width: 20%;">
           <tr>
             <td><p align="center">   Reference Video   </p></td>
             <td><p align="center">   Background Video   </p></td>
@@ -175,8 +193,22 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
              <p align="center">Remove the donkey</p>
             </td>
           </tr>
+        </table>
+        
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="7" style="width: 20%;">
           <tr>
-            <td colspan="7" style="padding: 0; margin: 0; border: none;">
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">   Background Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="5" style="padding: 0; margin: 0; border: none;">
              <video src="https://github.com/user-attachments/assets/658f0f8a-87f4-4bf3-8a37-5fd40136a466" width="100%" controls autoplay loop></video>
              <p align="center">Remove the chicken and dog</p>
             </td>
@@ -186,90 +218,376 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
     </div>
   </div>
 </section>
-<!-- End vid2vid carousel -->
+<!-- Object Removal -->
 
 
-<!-- Img2vid carousel -->
+<!-- Outpainting -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3">Image-to-Video</h2>
+      <h2 class="title is-3">Outpainting</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="img2vid_video1" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_plant.mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="img2vid_video2" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_buffalo.mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="img2vid_video3" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_grizzly.mp4">
-          </video>
-        </div>
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/244b14bc-613a-43ed-8133-0b783a6a9d24" width="100%" controls autoplay loop></video>
+             <p align="center">Outpaint mountains and lakes</p>
+            </td>
+          </tr>
+        </table>
 
-        <div class="item item-video4">
-          <video poster="" id="img2vid_video4" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_coffee.mp4">
-          </video>
-        </div>
-
-      <div class="item item-video5">
-          <video poster="" id="img2vid_video5" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_camel.mp4">
-          </video>
-        </div>
-      <div class="item item-video6">
-          <video poster="" id="img2vid_video6" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_pengiun.mp4">
-          </video>
-        </div>
-      <div class="item item-video7">
-          <video poster="" id="img2vid_video7" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_unicorn.mp4">
-          </video>
-        </div>
-
-      <div class="item item-video8">
-          <video poster="" id="img2vid_video8" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_bigfoot.mp4">
-          </video>
-        </div>
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/872d77f6-5cce-4e16-b764-ecff720120fa" width="100%" controls autoplay loop></video>
+             <p align="center">Outpaint mountains and lakes</p>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
 </section>
-<!-- End img2vid carousel -->
+<!-- Outpainting -->
 
 
-<!-- Subject Driven Video Generation carousel -->
+<!-- Object Internal Motion Transfer -->
 <section class="hero is-small">
   <div class="hero-body ">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Subject Driven Video Generation</h2>
+      <h2 class="title is-3">Object Internal Motion Transfer</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="sd_video1" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_walking.mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="sd_video2" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_drinking.mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="sd_video3" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_dancing.mp4">
-          </video>
-        </div>
-        <div class="item item-video4">
-          <video poster="" id="sd_video4" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_stretching.mp4">
-          </video>
-        </div>
-        <div class="item item-video5">
-          <video poster="" id="sd_video5" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_magnifying.mp4">
-          </video>
-        </div>
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/b87b9c54-0ead-44b9-8e5b-dd09c9bd5812" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/10863325-dd95-44f3-a352-120d3830ef58" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
 </section>
-<!-- End Subject Driven Video Generation carousel -->
+<!-- Object Internal Motion Transfer -->
 
 
+<!-- Lighting Transfer -->
+<section class="hero is-small">
+  <div class="hero-body ">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Lighting Transfer</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/8b0a8a83-a5cf-428b-bc30-be63a123d058" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/2597b074-d982-4e41-bed0-1a03638f1d4c" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Lighting Transfer -->
+
+  
+<!-- Color Change -->
+<section class="hero is-small">
+  <div class="hero-body ">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Color Change</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/1277ee7c-a035-4e8b-afb1-02cd7e0ed30b" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/89b565c6-87a8-4275-8544-d852cce76b8b" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Color Change -->
+
+
+
+
+
+<!-- Swap -->
+<section class="hero is-small">
+  <div class="hero-body ">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Swap</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/69eba358-4e0d-48f8-9052-d933c8c6a7bb" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/e9a6eb18-7c0d-4b2a-8ea9-2b40e7b0a7bd" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Swap -->
+
+
+
+
+<!-- Addition -->
+<section class="hero is-small">
+  <div class="hero-body ">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Addition</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/1459bb3d-5fca-41f3-962a-fb2002753a95" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="6" style="width: 16.66%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    VACE 1.3B  </p></td>
+            <td><p align="center">    VACE 14B  </p></td>
+            <td><p align="center">  Senorita  </p></td>
+            <td><p align="center">    VideoPainter </p></td>
+            <td><p align="center">   O-DisCo-Edit (ours)   </p></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/0ed8e94e-f3f8-402c-a8c0-2c48ec3062cc" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the motion of milk</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Addition -->
+
+
+
+
+<!-- Style Transfer -->
+<section class="hero is-small">
+  <div class="hero-body ">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Addition</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="4" style="width: 25%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    Senorita  </p></td>
+            <td><p align="center">    O-DisCo-Edit (ours)  </p></td>
+            <td><p align="center">  VideoComposer  </p></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/ddbcb114-4e0e-49a4-a8ce-8fd8c87332d6" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the sketch style</p>
+            </td>
+            <td><video src="https://github.com/user-attachments/assets/75746e89-7cb9-4512-bf57-2bbdf23a90e2" width="100%" controls autoplay loop></video></td>
+          </tr>
+        </table>
+
+        <table style="width: 100%; table-layout: fixed;">
+          <colgroup>
+            <col span="4" style="width: 25%;">
+          </colgroup>
+          <tr>
+            <td><p align="center">   Reference Video   </p></td>
+            <td><p align="center">    Senorita  </p></td>
+            <td><p align="center">    O-DisCo-Edit (ours)  </p></td>
+            <td><p align="center">  VideoComposer  </p></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding: 0; margin: 0; border: none;">
+             <video src="https://github.com/user-attachments/assets/81737c50-b075-4415-bd7b-5c116a212c32" width="100%" controls autoplay loop></video>
+             <p align="center">Transfer the sketch style</p>
+            </td>
+            <td><video src="https://github.com/user-attachments/assets/9947c1be-1ae4-4f2a-86f1-be198c39fa45" width="100%" controls autoplay loop></video></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Addition -->
 
 <section class="section hero is-small is-light">
   <div class="container is-max-desktop">
