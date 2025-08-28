@@ -2,24 +2,21 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video.">
-  <meta property="og:title" content="Dreamix: Video Diffusion Models are General Video Editors"/>
-  <meta property="og:description" content="Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video."/>
-  <meta property="og:url" content="https://dreamix-video-editing.github.io"/>
+  <meta property="og:title" content="O-DisCo-Edit: Object Distortion Control for Unified Realistic Video Editing"/>
+  <meta property="og:url" content="https://cyqii.github.io/O-DisCo-Edit.github.io"/>
   <meta property="og:image" content="static/image/og_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="Dreamix: Video Diffusion Models are General Video Editors">
-  <meta name="twitter:description" content="Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video.">
+  <meta name="twitter:title" content="O-DisCo-Edit: Object Distortion Control for Unified Realistic Video Editing">
   <meta name="twitter:image" content="static/images/twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="keywords" content="Video diffusion models, video editing, dreamix, dreambooth, imagen-video">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Dreamix: Video Diffusion Models are General Video Editors</title>
+  <title>O-DisCo-Edit: Object Distortion Control for Unified Realistic Video Editing</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -47,7 +44,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Dreamix: Video Diffusion Models are General Video Editors</h1>
+            <h1 class="title is-1 publication-title">O-DisCo-Edit: Object Distortion Control for Unified Realistic Video Editing</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
              <span class="author-block">
@@ -169,7 +166,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Text-driven image and video diffusion models have recently achieved unprecedented generation realism. While diffusion models have been successfully applied for image editing, very few works have done so for video editing. We present the first diffusion-based method that is able to perform text-based motion and appearance editing of general videos. Our approach uses a video diffusion model to combine, at inference time, the low-resolution spatio-temporal information from the original video with new, high resolution information that it synthesized to align with the guiding text-prompt. As obtaining high-fidelity to the original video requires retaining some of its high-resolution information, we add a preliminary stage of finetuning the model on the original video, significantly boosting fidelity. We propose to improve motion editability by a new, mixed objective that jointly finetunes with full temporal attention and with temporal attention masking. We further introduce a new framework for image animation. We first transform the image into a coarse video by simple image processing operations such as replication and perspective geometric projections, and then use our general video editor to animate it. As a further application, we can use our method for subject-driven video generation. Extensive qualitative and numerical experiments showcase the remarkable editing ability of our method and establish its superior performance compared to baseline methods.
+           Diffusion models have recently advanced video editing, yet controllable editing remains challenging due to the need for precise manipulation of diverse object properties. Current methods require  different control signal for diverse editing tasks, which complicates model design and demands significant training resources. 
+To address this, we propose O-DisCo-Edit, a unified framework that incorporates a novel object distortion control (O-DisCo). This signal, based on random and adaptive noise, flexibly encapsulates a wide range of editing cues within a single representation. Paired with a ``copy-form'' preservation module for preserving non-edited regions, O-DisCo-Edit enables efficient, high-fidelity editing through an effective training paradigm. Extensive experiments and comprehensive human evaluations consistently demonstrate that O-DisCo-Edit surpasses both specialized and multitask state-of-the-art methods across various video editing tasks.
           </p>
         </div>
       </div>
