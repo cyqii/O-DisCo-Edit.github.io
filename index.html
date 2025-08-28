@@ -138,88 +138,87 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
   <div class="container  is-max-desktop">
     <h2 class="title is-3">Text</h2>
     <div id="results-carousel" class="carousel results-carousel">
-      <div class="columns is-multiline">
+      <table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+        <colgroup>
+          <col style="width: 33.33%">
+          <col style="width: 33.33%">
+          <col style="width: 33.33%">
+        </colgroup>
+        
         <!-- 第一行 -->
-        <div class="column is-one-third">
-          <div class="video-card">
-            <p class="has-text-centered"><strong>Reference Video</strong></p>
-            <video src="https://github.com/user-attachments/assets/0a3caccb-eb43-4736-969c-4923560daacb"
-                   controls autoplay loop></video>
-            <p class="has-text-centered">Remove the car</p>
-          </div>
-        </div>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 10px;">
+            <p align="center"><strong>Reference Video</strong></p>
+            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4" 
+                   width="100%" controls autoplay loop></video>
+            <p align="center">Remove the car</p>
+          </td>
+          
+          <td style="border: 1px solid #ddd; padding: 10px;">
+            <p align="center"><strong>Diffueraser</strong></p>
+            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4" 
+                   width="100%" controls autoplay loop></video>
+            <p align="center">Method A</p>
+          </td>
+          
+          <td style="border: 1px solid #ddd; padding: 10px;">
+            <p align="center"><strong>MiniMax-Remover</strong></p>
+            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4" 
+                   width="100%" controls autoplay loop></video>
+            <p align="center">Method B</p>
+          </td>
+        </tr>
         
-        <div class="column is-one-third">
-          <div class="video-card">
-            <p class="has-text-centered"><strong>Diffueraser</strong></p>
-            <video src="https://github.com/user-attachments/assets/0a3caccb-eb43-4736-969c-4923560daacb"
-                   controls autoplay loop></video>
-            <p class="has-text-centered">Method A</p>
-          </div>
-        </div>
+        <!-- 第二行 -->
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 10px;">
+            <p align="center"><strong>ProPainter</strong></p>
+            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4" 
+                   width="100%" controls autoplay loop></video>
+            <p align="center">Method C</p>
+          </td>
+          
+          <td style="border: 1px solid #ddd; padding: 10px;">
+            <p align="center"><strong>O-DisCo-Edit</strong></p>
+            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4" 
+                   width="100%" controls autoplay loop></video>
+            <p align="center">Our Method</p>
+          </td>
+          
+          <td style="border: 1px solid #ddd; padding: 10px;">
+            <p align="center"><strong>Comparison</strong></p>
+            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4" 
+                   width="100%" controls autoplay loop></video>
+            <p align="center">All Methods</p>
+          </td>
+        </tr>
         
-        <div class="column is-one-third">
-          <div class="video-card">
-            <p class="has-text-centered"><strong>MiniMax-Remover</strong></p>
-            <video src="https://github.com/user-attachments/assets/0a3caccb-eb43-4736-969c-4923560daacb"
-                   controls autoplay loop></video>
-            <p class="has-text-centered">Method B</p>
-          </div>
-        </div>
+        <!-- 第三行 -->
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 10px;">
+            <p align="center"><strong>Example 1</strong></p>
+            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4" 
+                   width="100%" controls autoplay loop></video>
+            <p align="center">Case Study A</p>
+          </td>
+          
+          <td style="border: 1px solid #ddd; padding: 10px;">
+            <p align="center"><strong>Example 2</strong></p>
+            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4" 
+                   width="100%" controls autoplay loop></video>
+            <p align="center">Case Study B</p>
+          </td>
+          
+          <td style="border: 1px solid #ddd; padding: 10px;">
+            <p align="center"><strong>Example 3</strong></p>
+            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4" 
+                   width="100%" controls autoplay loop></video>
+            <p align="center">Case Study C</p>
+          </td>
+        </tr>
+      </table>
+        
 
-        <div class="column is-second-third">
-          <div class="video-card">
-            <p class="has-text-centered"><strong>Reference Video</strong></p>
-            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4"
-                   controls autoplay loop></video>
-            <p class="has-text-centered">Remove the car</p>
-          </div>
-        </div>
-        
-        <div class="column is-second-third">
-          <div class="video-card">
-            <p class="has-text-centered"><strong>Diffueraser</strong></p>
-            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4"
-                   controls autoplay loop></video>
-            <p class="has-text-centered">Method A</p>
-          </div>
-        </div>
-        
-        <div class="column is-second-third">
-          <div class="video-card">
-            <p class="has-text-centered"><strong>MiniMax-Remover</strong></p>
-            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4"
-                   controls autoplay loop></video>
-            <p class="has-text-centered">Method B</p>
-          </div>
-        </div>
-
-        <div class="column is-third-third">
-          <div class="video-card">
-            <p class="has-text-centered"><strong>Reference Video</strong></p>
-            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4"
-                   controls autoplay loop></video>
-            <p class="has-text-centered">Remove the car</p>
-          </div>
-        </div>
-        
-        <div class="column is-third-third">
-          <div class="video-card">
-            <p class="has-text-centered"><strong>Diffueraser</strong></p>
-            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4"
-                   controls autoplay loop></video>
-            <p class="has-text-centered">Method A</p>
-          </div>
-        </div>
-        
-        <div class="column is-third-third">
-          <div class="video-card">
-            <p class="has-text-centered"><strong>MiniMax-Remover</strong></p>
-            <video src="static/videos/ObjectRemoval49/ReferenceVideo/bear.mp4"
-                   controls autoplay loop></video>
-            <p class="has-text-centered">Method B</p>
-          </div>
-        </div>
       </div>
     </div>
   </div>
