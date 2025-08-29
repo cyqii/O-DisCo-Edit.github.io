@@ -379,13 +379,18 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-3">Method Overview: Mixed Video-Image Finetuning</h2>
+          <h2 class="title is-3">Method Overview</h2>
           <center>
-          <img src="static/images/architecture_finetune.png" alt="Mixed Video-Image Finetuning" class="center-image blend-img-background"/>
+          <img src="static/images/framework_all6.png" alt="Mixed Video-Image Finetuning" class="center-image blend-img-background"/>
           </center>
           <div class="level-set has-text-justified">
             <p>
-               Finetuning the video diffusion model on the input video alone limits the extent of motion change. Instead, we use a mixed objective that beside the original objective (bottom left) also finetunes on the unordered set of frames. This is done by using “masked temporal attention”, preventing the temporal attention and convolution from being finetuned (bottom right). This allows adding motion to a static video.
+              The framework of the proposed O-DisCo-Edit. (a) Reference video. (b) Reference image (first frame during training, edited
+              image during inference). (c) Masks. (d) R-O-DisCo. (e) A-O-DisCo. (f) Generated video. (g) Latent of reference video. (h) Latent of the
+              preserved region. (i) Image latent with zero-padding. (m) Noisy Latent. (n) Image Latent with the latent of preserved region. α represents
+              the contrast, σ represents the intensity of the added noise, and k is the size of the gaussian blur kernel. The adaptive distorter generates
+              A-O-DisCo for inference, and the random distorter generates R-O-DisCo for training. The CFP ensures the preservation of unedited areas.
+              The IDP maintains object appearance consistency. 
             </p>
           </div>
         </div>
