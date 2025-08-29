@@ -396,52 +396,9 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
 
 
 
-<section class="section is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h2 class="title is-3">Inference Overview</h2>
-          <center>
-          <img src="static/images/architecture_applications_extended.png" alt="Inference Overview" class="center-image"/>
-          </center>
-          <div class="level-set has-text-justified">
-            <p>
-               Our method supports multiple applications by application dependent pre-processing (left), converting the input content into a uniform video format. For image-to-video, the input image is duplicated and transformed using perspective transformations, synthesizing a coarse video with some camera motion. For subject driven video generation, the input is omitted -  finetuning alone take care of the fidelity.
-               This coarse video is then edited using our general ``Dreamix Video Editor`` (right): we first corrupt the video by downsampling followed by adding noise. We then apply the finetuned text-guided video diffusion model, which upscales the video to the final spatio-temporal resolution
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/xcvnHhfDSGM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-
-<!--BibTex citation -->
+<!-- BibTex citation 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -453,16 +410,16 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
 }</code></pre>
   </div>
 </section>
-<!-- End BibTex citation -->
+End BibTex citation -->
 
-<!--Acknowledgements -->
+<!--Acknowledgements
 <section class="section" id="Acknowledgements">
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
   We thank Ely Sarig for creating the video, Jay Tenenbaum for the video narration, Amir Hertz for the implementation of our eval baseline, Daniel Cohen-Or, Assaf Zomet, Eyal Segalis, Matan Kalman and Emily Denton for their valuable inputs that helped improve this work.
   </div>
 </section>
-<!--End Acknowledgements -->
+End Acknowledgements -->
   
 <footer class="footer">
   <div class="container">
@@ -484,8 +441,7 @@ To address this, we propose O-DisCo-Edit, a unified framework that incorporates 
 
 <!-- Statcounter tracking code -->
 
-<!-- Default Statcounter code for Dreamix
-https://dreamix-video-editing.github.io -->
+
 <script type="text/javascript">
 var sc_project=12843789; 
 var sc_invisible=1; 
